@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Layout</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="/assets/vendors/bootstrap-icons/bootstrap-icons.css" />
+    <link rel="stylesheet" href="/assets/css/app.css" />
+    <link rel="shortcut icon" href="/assets/images/favicon.svg" type="image/x-icon" />
+</head>
+
+<body>
+    <div id="app">
+        <!--Inicia navbar-->
+        <div id="sidebar" class="active">
+            <div class="sidebar-wrapper active">
+                <div class="sidebar-header">
+                    <div class="d-flex justify-content-between">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="/assets/images/logo/logo.png" class="img-fluid rounded" alt="Logo" 
+                                style="width: 200px; height: auto;">
+                            </a>                        </div>
+                        <div class="toggler">
+                            <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-menu">
+                    <ul class="menu">
+                        <li class="sidebar-title">Menu</li>
+
+                        <li class="sidebar-item active">
+                            <a href="index.html" class="sidebar-link">
+                                <i class="bi bi-grid-fill"></i>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item has-sub">
+                            <a href="#" class="sidebar-link">
+                                <i class="bi bi-stack"></i>
+                                <span>Components</span>
+                            </a>
+                            <ul class="submenu">
+                                <li class="submenu-item">
+                                    <a href="component-alert.html">Alert</a>
+                                </li>
+                                <li class="submenu-item">
+                                    <a href="component-badge.html">Badge</a>
+                                </li>
+                                <li class="submenu-item">
+                                    <a href="component-breadcrumb.html">Breadcrumb</a>
+                                </li>
+                                <li class="submenu-item">
+                                    <a href="component-button.html">Button</a>
+                                </li>
+                                <li class="submenu-item">
+                                    <a href="component-card.html">Card</a>
+                                </li>
+                                <li class="submenu-item">
+                                    <a href="component-carousel.html">Carousel</a>
+                                </li>
+                                <li class="submenu-item">
+                                    <a href="component-dropdown.html">Dropdown</a>
+                                </li>
+                                <li class="submenu-item">
+                                    <a href="component-list-group.html">List Group</a>
+                                </li>
+                                <li class="submenu-item">
+                                    <a href="component-modal.html">Modal</a>
+                                </li>
+                                <li class="submenu-item">
+                                    <a href="component-navs.html">Navs</a>
+                                </li>
+                                <li class="submenu-item">
+                                    <a href="component-pagination.html">Pagination</a>
+                                </li>
+                                <li class="submenu-item">
+                                    <a href="component-progress.html">Progress</a>
+                                </li>
+                                <li class="submenu-item">
+                                    <a href="component-spinner.html">Spinner</a>
+                                </li>
+                                <li class="submenu-item">
+                                    <a href="component-tooltip.html">Tooltip</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="sidebar-item has-sub">
+                            <a href="#" class="sidebar-link">
+                                <i class="bi bi-collection-fill"></i>
+                                <span>Extra Components</span>
+                            </a>
+                            <ul class="submenu">
+                                <li class="submenu-item">
+                                    <a href="extra-component-avatar.html">Avatar</a>
+                                </li>
+                                <li class="submenu-item">
+                                    <a href="extra-component-sweetalert.html">Sweet Alert</a>
+                                </li>
+                                <li class="submenu-item">
+                                    <a href="extra-component-toastify.html">Toastify</a>
+                                </li>
+                                <li class="submenu-item">
+                                    <a href="extra-component-divider.html">Divider</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="sidebar-title">Forms &amp; Tables</li>
+
+                        <li class="sidebar-item has-sub">
+                            <a href="#" class="sidebar-link">
+                                <i class="bi bi-hexagon-fill"></i>
+                                <span>Form Elements</span>
+                            </a>
+                            <ul class="submenu">
+                                <li class="submenu-item">
+                                    <a href="form-element-input.html">Input</a>
+                                </li>
+                                <li class="submenu-item">
+                                    <a href="form-element-input-group.html">Input Group</a>
+                                </li>
+                                <li class="submenu-item">
+                                    <a href="form-element-select.html">Select</a>
+                                </li>
+                                <li class="submenu-item">
+                                    <a href="form-element-radio.html">Radio</a>
+                                </li>
+                                <li class="submenu-item">
+                                    <a href="form-element-checkbox.html">Checkbox</a>
+                                </li>
+                                <li class="submenu-item">
+                                    <a href="form-element-textarea.html">Textarea</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="sidebar-item">
+                            <a href="form-layout.html" class="sidebar-link">
+                                <i class="bi bi-file-earmark-medical-fill"></i>
+                                <span>Form Layout</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item">
+                            <a href="table.html" class="sidebar-link">
+                                <i class="bi bi-grid-1x2-fill"></i>
+                                <span>Table</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item">
+                            <a href="table-datatable.html" class="sidebar-link">
+                                <i class="bi bi-file-earmark-spreadsheet-fill"></i>
+                                <span>Datatable</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-title">Extra UI</li>
+
+                        <li class="sidebar-item has-sub">
+                            <a href="#" class="sidebar-link">
+                                <i class="bi bi-egg-fill"></i>
+                                <span>Icons</span>
+                            </a>
+                            <ul class="submenu">
+                                <li class="submenu-item">
+                                    <a href="ui-icons-bootstrap-icons.html">Bootstrap Icons </a>
+                                </li>
+                                <li class="submenu-item">
+                                    <a href="ui-icons-fontawesome.html">Fontawesome</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="sidebar-item has-sub">
+                            <a href="#" class="sidebar-link">
+                                <i class="bi bi-bar-chart-fill"></i>
+                                <span>Charts</span>
+                            </a>
+                            <ul class="submenu">
+                                <li class="submenu-item">
+                                    <a href="ui-chart-chartjs.html">ChartJS</a>
+                                </li>
+                                <li class="submenu-item">
+                                    <a href="ui-chart-apexcharts.html">Apexcharts</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="sidebar-item">
+                            <a href="ui-file-uploader.html" class="sidebar-link">
+                                <i class="bi bi-cloud-arrow-up-fill"></i>
+                                <span>File Uploader</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-title">Pages</li>
+
+                        <li class="sidebar-item">
+                            <a href="auth-login.html" class="sidebar-link">
+                                <i class="bi bi-cloud-arrow-up-fill"></i>
+                                <span>Login</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item has-sub">
+                            <a href="#" class="sidebar-link">
+                                <i class="bi bi-x-octagon-fill"></i>
+                                <span>Errors</span>
+                            </a>
+                            <ul class="submenu">
+                                <li class="submenu-item">
+                                    <a href="error-403.html">403</a>
+                                </li>
+                                <li class="submenu-item">
+                                    <a href="error-404.html">404</a>
+                                </li>
+                                <li class="submenu-item">
+                                    <a href="error-500.html">500</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>               
+            </div>
+        </div>
+        <!--Termina navbar-->
+        <div id="main">
+            <!-- Menu Icono (solo móvil) -->
+            <header class="mb-3">
+                <a href="#" class="burger-btn d-block d-xl-none">
+                    <i class="bi bi-justify fs-3"></i>
+                </a>
+            </header>
+
+            <!-- Titulo de la página web -->
+            <div class="page-heading">
+                <h3>Form Layout</h3>
+                <p class="text-subtitle text-muted text-xl">
+                    Formulario el cual se dividirá máximo en dos columnas, mientras que
+                    los campos cómo comentarios en una sola. A continuación están todos
+                    los inputs necesarios
+                </p>
+            </div>
+            <!-- Contenido de la página web -->
+            <div class="page-content">
+                <section class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div id="sticky-wrapper" class="sticky-wrapper" style="height: 87.8977px">
+                                <div
+                                    class="card-header sticky-element bg-label-secondary d-flex justify-content-sm-between align-items-sm-center flex-column flex-sm-row">
+                                    <h3 class="page-heading mb-sm-0 mt-3">Alta de Recurso</h3>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-8 mx-auto">
+                                        <!-- 1. Delivery Address -->
+                                        <h5 class="mb-4">1. Delivery Address</h5>
+                                        <div class="row g-3">
+                                            <div class="col-md-6">
+                                                <label class="form-label" for="fullname">Full Name</label>
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text" id="basic-addon1"><i
+                                                            class="fas fa-user"></i></span>
+                                                    <input type="text" class="form-control"
+                                                        placeholder="Recipient's username"
+                                                        aria-label="Recipient's username"
+                                                        aria-describedby="button-addon2" />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="form-label" for="fullname">Correo electrónico</label>
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text" id="basic-addon1"><i
+                                                            class="fas fa-envelope"></i></span>
+                                                    <input type="text" class="form-control"
+                                                        placeholder="Recipient's username"
+                                                        aria-label="Recipient's username"
+                                                        aria-describedby="button-addon2" />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="form-label" for="phone">Contact Number</label>
+                                                <input type="text" id="phone" class="form-control phone-mask"
+                                                    placeholder="658 799 8941" aria-label="658 799 8941" />
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="form-label" for="alt-num">Alternate Number</label>
+                                                <input type="text" id="alt-num" class="form-control phone-mask"
+                                                    placeholder="658 799 8941" />
+                                            </div>
+                                            <div class="col-12">
+                                                <label class="form-label" for="address">Address</label>
+                                                <textarea name="address" class="form-control" id="address" rows="2"
+                                                    placeholder="1456, Mall Road"></textarea>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="form-label" for="pincode">Pincode</label>
+                                                <input type="text" id="pincode" class="form-control"
+                                                    placeholder="658468" />
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="form-label" for="landmark">Landmark</label>
+                                                <input type="text" id="landmark" class="form-control"
+                                                    placeholder="Nr. Wall Street" />
+                                            </div>
+                                            <div class="col-md">
+                                                <label class="form-label" for="city">City</label>
+                                                <input type="text" id="city" class="form-control"
+                                                    placeholder="Jackson" />
+                                            </div>
+                                            <div class="col-md">
+                                                <label class="form-label" for="state">State</label>
+                                                <div class="position-relative">
+                                                    <select id="state"
+                                                        class="select2 form-select select2-hidden-accessible"
+                                                        data-allow-clear="true" data-select2-id="state" tabindex="-1"
+                                                        aria-hidden="true">
+                                                        <option value="" data-select2-id="2">
+                                                            Select
+                                                        </option>
+                                                        <option value="AL">Alabama</option>
+                                                        <option value="AK">Alaska</option>                                              
+                                                    </select><span
+                                                        class="select2 select2-container select2-container--default"
+                                                        dir="ltr" data-select2-id="1" style="width: 328.281px"><span
+                                                            class="selection"><span
+                                                                class="select2-selection select2-selection--single"
+                                                                role="combobox" aria-haspopup="true"
+                                                                aria-expanded="false" tabindex="0" aria-disabled="false"
+                                                                aria-labelledby="select2-state-container"><span
+                                                                    class="select2-selection__rendered"
+                                                                    id="select2-state-container" role="textbox"
+                                                                    aria-readonly="true"><span
+                                                                        class="select2-selection__placeholder">Select
+                                                                        value</span></span><span
+                                                                    class="select2-selection__arrow"
+                                                                    role="presentation"><b
+                                                                        role="presentation"></b></span></span></span><span
+                                                            class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="deliveryAdd" checked="" />
+                                                    <label class="form-check-label" for="deliveryAdd">
+                                                        Use this as default delivery address
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <label class="form-check-label">Address Type</label>
+                                            <div class="col mt-2">
+                                                <div class="form-check form-check-inline">
+                                                    <input name="collapsible-address-type" class="form-check-input"
+                                                        type="radio" value="" id="collapsible-address-type-home"
+                                                        checked="" />
+                                                    <label class="form-check-label"
+                                                        for="collapsible-address-type-home">Home (All day
+                                                        delivery)</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input name="collapsible-address-type" class="form-check-input"
+                                                        type="radio" value="" id="collapsible-address-type-office" />
+                                                    <label class="form-check-label"
+                                                        for="collapsible-address-type-office">
+                                                        Office (Delivery between 10 AM - 5 PM)
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr />
+                                        <!-- 2. Apply Promo code -->
+                                        <h5 class="my-4">2. Apply Promo code</h5>
+                                        <div class="row g-3">
+                                            <div class="col-12">
+                                                <div class="row">
+                                                    <div class="col-lg-10 col-sm-10 col-8">
+                                                        <input type="text" class="form-control"
+                                                            placeholder="TAKEITALL" />
+                                                    </div>
+                                                    <div class="col-lg-2 col-sm-2 col-4">
+                                                        <button class="btn btn-primary col-12">Apply</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="divider divider-dashed">
+                                                <div class="divider-text">OR</div>
+                                            </div>
+                                            <div class="col-12">
+                                                <ul class="list-group">
+                                                    <li
+                                                        class="list-group-item d-flex justify-content-between flex-column flex-sm-row">
+                                                        <div class="offer">
+                                                            <p class="mb-0"><strong>TAKEITALL</strong></p>
+                                                            <span>Apply this code to get 15% discount on orders
+                                                                above 20$.</span>
+                                                        </div>
+                                                        <div class="apply mt-3 mt-sm-0">
+                                                            <button class="btn btn-outline-primary">
+                                                                Apply
+                                                            </button>
+                                                        </div>
+                                                    </li>
+                                                    <li
+                                                        class="list-group-item d-flex justify-content-between flex-column flex-sm-row">
+                                                        <div class="offer">
+                                                            <p class="mb-0"><strong>FESTIVE10</strong></p>
+                                                            <span>Apply this code to get 10% discount on all
+                                                                orders.</span>
+                                                        </div>
+                                                        <div class="apply mt-3 mt-sm-0">
+                                                            <button class="btn btn-outline-primary">
+                                                                Apply
+                                                            </button>
+                                                        </div>
+                                                    </li>
+                                                    <li
+                                                        class="list-group-item d-flex justify-content-between flex-column flex-sm-row">
+                                                        <div class="offer">
+                                                            <p class="mb-0"><strong>MYSTERYDEAL</strong></p>
+                                                            <span>Apply this code to get discount between 10% -
+                                                                50%.</span>
+                                                        </div>
+                                                        <div class="apply mt-3 mt-sm-0">
+                                                            <button class="btn btn-outline-primary">
+                                                                Apply
+                                                            </button>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <hr />
+                                        <!-- 4. Payment Method -->
+                                        <h5 class="my-4">4. Payment Method</h5>
+                                        <div class="row g-3">
+                                            <div class="mb-3">
+                                                <div class="form-check form-check-inline">
+                                                    <input name="collapsible-payment" class="form-check-input"
+                                                        type="radio" value="" id="collapsible-payment-cc" checked="" />
+                                                    <label class="form-check-label" for="collapsible-payment-cc">
+                                                        Credit/Debit/ATM Card
+                                                        <i class="ms-1 far fa-credit-card"></i>
+                                                    </label>
+                                                </div>
+                                                <div class="form-check form-check-inline ms-2">
+                                                    <input name="collapsible-payment" class="form-check-input"
+                                                        type="radio" value="" id="collapsible-payment-cash" />
+                                                    <label class="form-check-label" for="collapsible-payment-cash">
+                                                        Cash On Delivery
+                                                        <i class="ms-1 fas fa-question-circle text-muted"
+                                                            data-bs-toggle="tooltip" data-bs-placement="top"
+                                                            title="Tooltip on top">
+                                                            Tooltip on top
+                                                        </i>
+                                                    </label>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 col-md-10 col-xxl-8">
+                                                <div class="mb-3">
+                                                    <label class="form-label w-100" for="collapsible-payment-card">Card
+                                                        Number</label>
+                                                    <div class="input-group input-group-merge">
+                                                        <span class="input-group-text cursor-pointer p-1"
+                                                            id="creditCardMask2"><i
+                                                                class="ms-1 far fa-credit-card"></i></span>
+                                                        <input type="text" id="collapsible-payment-card"
+                                                            name="creditCardMask" class="form-control credit-card-mask"
+                                                            placeholder="1356 3215 6548 7898"
+                                                            aria-describedby="creditCardMask2" />
+
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12 col-md-6">
+                                                        <div class="mb-3">
+                                                            <label class="form-label"
+                                                                for="collapsible-payment-name">Name</label>
+                                                            <input type="text" id="collapsible-payment-name"
+                                                                class="form-control" placeholder="John Doe" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 col-md-3">
+                                                        <div class="mb-3">
+                                                            <label class="form-label"
+                                                                for="collapsible-payment-expiry-date">Exp. Date</label>
+                                                            <input type="text" id="collapsible-payment-expiry-date"
+                                                                class="form-control expiry-date-mask"
+                                                                placeholder="MM/YY" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 col-md-3">
+                                                        <div class="mb-3">
+                                                            <label class="form-label" for="collapsible-payment-cvv">CVV
+                                                                Code</label>
+                                                            <div class="input-group input-group-merge">
+                                                                <input type="text" id="collapsible-payment-cvv"
+                                                                    class="form-control cvv-code-mask" maxlength="3"
+                                                                    placeholder="654" />                                                            
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- Termina contenido de la página web -->
+            <footer>
+
+                <div class="footer clearfix mb-0 text-muted">
+                    <div class="text-center">
+                        <p>2022 &copy; ThePandaDevs</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="/assets/vendors/fontawesome/all.min.js"></script>
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/pages/dashboard.js"></script>
+    <script src="/assets/js/main.js"></script>
+</body>
+
+</html>
