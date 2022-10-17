@@ -17,12 +17,19 @@ self.addEventListener('install', (event) => {
             './assets/css/bootstrap.css',
             './assets/css/app.css',
             './assets/images/favicon.ico',
+            './assets/images/icons/android-launchericon-48.png',
+            './assets/images/icons/android-launchericon-72.png',
+            './assets/images/icons/android-launchericon-96.png',
+            './assets/images/icons/android-launchericon-144.png',
+            './assets/images/icons/android-launchericon-192.png',
+            './assets/images/icons/android-launchericon-512.png',
             './assets/images/logo/logo.png',
             './assets/images/faces/1.jpg',
             './assets/images/faces/2.jpg',
             './assets/images/faces/3.jpg',
             './assets/images/faces/4.jpg',
             './assets/images/faces/5.jpg',
+            './assets/images/resources/bg-phone.jpg',
             './assets/images/resources/ferreteria-canalete-logo.png',
             './assets/images/resources/san_jose_logo.png',
             './assets/images/app-badges/app-store-badge.svg',
@@ -35,7 +42,7 @@ self.addEventListener('install', (event) => {
             './assets/vendors/bootstrap-icons/fonts/bootstrap-icons.woff?4601c71fb26c9277391ec80789bfde9c',         
             './assets/vendors/bootstrap-icons/fonts/bootstrap-icons.woff2?4601c71fb26c9277391ec80789bfde9c', 
             './assets/vendors/apexcharts/apexcharts.js',         
-            './manifest.json',
+            './manifest.json'
         ]);
     });
 
@@ -46,9 +53,7 @@ self.addEventListener('install', (event) => {
             'https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.24.1/feather.min.js',
             'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js',
             'https://unpkg.com/aos@next/dist/aos.js',
-            'https://source.unsplash.com/eluzJSfkNCk/518x1122',
             'https://fonts.gstatic.com/s/nunito/v25/XRXV3I6Li01BKofINeaB.woff2'
-        
         ]);
     });
     
