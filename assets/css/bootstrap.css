@@ -4379,8 +4379,15 @@
  .navbar>.container-xxl {
      display: flex;
      flex-wrap: inherit;
-     align-items: center;
-     justify-content: space-between
+     align-items: center;     
+     justify-content: space-between;
+     background-color: #fff;
+    background-clip: border-box;
+    border: 0 solid #d9dee3;
+    border-radius: 0.5rem;
+    background-clip: padding-box;
+    box-shadow: 0 2px 6px 0 rgb(67 89 113 / 12%);
+
  }
 
  .navbar-brand {
@@ -4458,7 +4465,9 @@
  @media (min-width:576px) {
      .navbar-expand-sm {
          flex-wrap: nowrap;
+         
          justify-content: flex-start
+         
      }
 
      .navbar-expand-sm .navbar-nav {
@@ -4514,7 +4523,9 @@
  @media (min-width:992px) {
      .navbar-expand-lg {
          flex-wrap: nowrap;
+
          justify-content: flex-start
+         
      }
 
      .navbar-expand-lg .navbar-nav {
@@ -4595,17 +4606,24 @@
      }
  }
 
+ .nv-style{
+    
+    z-index: 3;
+ }
+
  .navbar-expand {
      flex-wrap: nowrap;
-     justify-content: flex-start
+     justify-content: flex-start;
+    
  }
 
  .navbar-expand .navbar-nav {
-     flex-direction: row
+     flex-direction: row;
  }
 
  .navbar-expand .navbar-nav .dropdown-menu {
-     position: absolute
+     position: absolute;
+     
  }
 
  .navbar-expand .navbar-nav .nav-link {
@@ -11442,7 +11460,6 @@
      .d-print-inline-flex {
          display: inline-flex !important
      }
-
      .d-print-none {
          display: none !important
      }
